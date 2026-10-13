@@ -7,4 +7,4 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=build /app/target/wordchain-1.0.0.jar app.jar
-CMD ["sh", "-c", "java -Dserver.port=\ -jar app.jar"]
+CMD ["sh", "-c", "java -Dserver.port=$PORT -jar app.jar"]
