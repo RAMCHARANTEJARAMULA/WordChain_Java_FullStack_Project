@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+target/
+node_modules/
+dist/
+*.mv.db
+*.trace.db
